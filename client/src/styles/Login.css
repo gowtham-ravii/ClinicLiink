@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Whisper&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Teko:wght@300..700&family=Whisper&display=swap');
+.LoginBox{
+   
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding:10px;
+}
+.LoginBox h1{
+    padding-top: 5px;
+    color: #e7ecef;
+    font-family: "Whisper", cursive;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 45px;
+}
+.textbox{
+    padding-Top:20px;
+
+}
+.textbox input{
+    height: 40px;
+    width: 300px;
+    border-radius: 10px;
+    border: none;
+    background-color: #e6e9ed;
+    font-family: "Teko", sans-serif;
+    font-size: 20px;
+    color: #01060b;
+    outline: none;
+    padding-left: 10px;
+    font-weight: medium;
+    
+}
+.lbox{
+    background-color: white;
+    height: 250px;
+    margin-left: 32px;
+    margin-right: 32px;
+    border-radius: 10px;
+}
+.box{
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width:400px;
+    height: 430px;
+    border-radius: 25px;
+    background-color: #415971;
+    border: 20px solid none;
+    
+}
+.btn{
+    
+    background-color: #415971;
+    width: 100px;
+    height:40px;
+    color: rgb(249, 247, 247);
+    border-radius:10px ;
+    border:0px;
+    font-size: 22px;
+    font-family: "Teko", sans-serif;
+}
+.btm{
+    padding: 35px;
+}
+.registerlo{
+    color: #f4f5f6;
+    font-family: "Teko", sans-serif;
+    font-size: 20px;
+    
+}
+.registerlo a{
+    color: #f4f5f6;
+    text-decoration: none;
+}
+.registerlo a:hover{
+    color: #a8b6c5;
+    text-decoration: none;
+}
+.logdoc{
+    display: flex;
+}
+.welcomelo{
+    margin-top:-30px;
+    margin-left: 220px;
+}
+.welcomelo h1{
+    font-size:60px;
+    font-family: "Whisper", cursive;
+    color: #e7ecef;
+}
+.welcomelo img{
+    margin-top: -50px;
+    height: 500px;
+    width:320px;
+}

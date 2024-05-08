@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Angkor&display=swap');
+
+.over {
+  display: flex;
+  justify-content: center; /* Center the circles horizontally */
+}
+
+.circle {
+  width: 200px; /* Increase circle size */
+  height: 200px; /* Increase circle size */
+  border-radius: 50%;
+  background: radial-gradient(#5a6b7f, #34495e 50%, #34495e); /* Adjust gradient color */
+  margin: 30px; /* Increase spacing between circles */
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: transform 0.3s ease-in-out; /* Add smooth hover transition */
+}
+
+.circle:hover {
+  transform: scale(1.05); /* Scale up on hover */
+}
+
+.circle-text {
+  text-align: center;
+}
+
+.circle h2 {
+  font-family: "Angkor", serif;
+  font-size: 46px; /* Adjust font size as needed */
+  color: #fff; /* Text color */
+  margin: 0;
+  animation: countupAnimation 2s forwards; /* Animation for CountUp */
+}
+
+.circle p {
+  font-family: "Angkor", serif;
+  font-size: 22px; /* Adjust font size as needed */
+  color: #fff; /* Text color */
+  margin: 0;
+}
+
+/* Keyframes for CountUp animation */
+@keyframes countupAnimation {
+  from { transform: scale(0.5); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}

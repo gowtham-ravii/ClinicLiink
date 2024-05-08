@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Whisper&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Teko:wght@300..700&family=Whisper&display=swap');
+.register{
+    background-color: #4b647d;
+    margin-top: 50px;
+    margin-right: 50px;
+    margin-left:50px;
+    border-radius: 15px;
+}
+.register h1{
+    color: #e7ecef;
+    font-family: "Whisper", cursive;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 45px;
+    text-align: center;
+}
+.group{
+    background-color: white;
+    
+    font-family: "Teko", sans-serif;
+    font-size: 20px;
+
+}
+.form-group{
+    padding-left: 30px;
+    padding-bottom: 10px;
+}
+
+.form-group input{
+    height:35px;
+    width: 400px;
+    border-radius: 15px;
+    border: none;
+    background-color: #e6e9ed;
+    font-family: "Teko", sans-serif;
+    font-size: 16px;
+    color: #01060b;
+    outline: none;
+    padding-left: 10px;
+    font-weight: medium;
+}
+.btnr{
+    margin-left: 520px;
+    text-align: center;
+    background-color: #415971;
+    width: 150px;
+    height:40px;
+    color: rgb(249, 247, 247);
+    border-radius:10px ;
+    border:0px;
+    font-size: 22px;
+    font-family: "Teko", sans-serif;
+    cursor: pointer;
+    margin-bottom: 5px;
+   
+}
+.flexi{
+    display: flex;
+    background-color: white;
+    margin-left: 90px;
+    margin-right:90px;
+}
+.welcome img{
+    margin-top: -70px;
+}
+.welcome h1{
+    font-size:60px;
+}
+.loginre{
+    color: #f4f5f6;
+    font-family: "Teko", sans-serif;
+    font-size: 25px;
+    text-align: center;
+    padding:5px;
+}
+.loginre a{
+    color: #f4f5f6;
+    text-decoration: none;
+}
+.loginre a:hover{
+    color: #a8b6c5;
+    text-decoration: none;
+}
+#bloodgroup{
+    height:35px;
+    width: 75px;
+    border-radius: 15px;
+    border: none;
+    background-color: #e6e9ed;
+    font-family: "Teko", sans-serif;
+    font-size: 16px;
+    color: #01060b;
+    outline: none;
+    padding-left: 10px;
+    font-weight: medium;
+}

@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Whisper&display=swap');
+
+body {
+  margin: 0;
+  padding-bottom: 60px; /* Adjust padding to accommodate the footer */
+}
+
+.footers {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #34495e;
+  color: white;
+  text-align: center;
+  font-family: "Teko", sans-serif;
+  padding: 5px 0; /* Adjust padding as needed */
+  transition: opacity 0.5s; /* Add smooth transition for better user experience */
+  opacity: 0; /* Initially hide the footer */
+}
+
+.footers.visible {
+  opacity: 1; /* Show the footer when visible */
+}
+
+.foot p {
+  margin: 0; /* Remove default margin to ensure text alignment */
+  padding: 10px; /* Adjust padding as needed */
+}

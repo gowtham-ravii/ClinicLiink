@@ -1,0 +1,76 @@
+/* doctor.css */
+.card{
+    margin-top: 20px;
+    display:flex;
+    justify-content:center;
+
+}
+.doctor-card {
+    text-align:center;
+    justify-content: center;
+    width: 250px;
+    height:300px;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(to top, white 70%, #415971 30%); /* Gradient background */
+    font-family: "Teko", sans-serif;
+  }
+  
+  .doctor-info {
+    align-items: center;
+  }
+  
+  .doctor-img img {
+    width: 120px;
+    height: 110px;
+    border-radius: 50%;
+    justify-content: center;
+  }
+  
+  .doctor-details {
+    flex-grow: 1;
+  }
+  
+  .doctor-name {
+    font-size: 30px;
+    font-family: "Whisper", cursive;
+    color: #415971;
+    margin: 0 0 5px;
+  }
+  
+  .doctor-specialization {
+    color: #415971;
+    font-size: 20px;
+    margin: 0;
+  }
+  
+  .doctor-location {
+    color: #415971;
+    font-size: 20px;
+    margin: 5px 0;
+  }
+  
+  .book-appointment-btn {
+    justify-content: baseline;
+    font-family: "Teko", sans-serif;
+    font-size: 20px;
+    background-color:#415971;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .book-appointment-btn:hover {
+    background-color:#2b3a49;
+  }
+  .excard h1{
+    font-size: 40px;
+    font-family: "Whisper", cursive;
+    text-align: center;
+  }
+  

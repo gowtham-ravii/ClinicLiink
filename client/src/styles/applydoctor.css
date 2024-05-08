@@ -1,0 +1,73 @@
+.apply h1{
+    text-align: center;
+    font-family: "Whisper", cursive;
+    font-size: 35px;
+    color:#e4e8ec;
+    margin-top:-20px;
+}
+.apply{
+    background-color: #415971;
+    border-radius: 15px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 70px;
+}
+.applyform{
+    background-color: white;
+    padding: 6px;
+    border-radius: 10px;
+    margin-left: 70px;
+    margin-right: 70px;
+    font-family: "Teko", sans-serif;
+    font-size: 20px;
+}
+.applyform input{
+    height:35px;
+    width: 400px;
+    border-radius: 15px;
+    border: none;
+    background-color: #e6e9ed;
+    font-family: "Teko", sans-serif;
+    font-size: 16px;
+    color: #01060b;
+    outline: none;
+    padding-left: 10px;
+    font-weight: medium;
+}
+#apbtn{
+    margin-left: 520px;
+    text-align: center;
+    background-color: #415971;
+    width: 150px;
+    height:40px;
+    color: rgb(249, 247, 247);
+    border-radius:10px ;
+    border:0px;
+    font-size: 22px;
+    font-family: "Teko", sans-serif;
+    cursor: pointer;
+}
+.appimg{
+    display: flex;
+    margin-right: 50px;
+    padding-right: 60px;
+}
+.appimg img{
+    width: 450px;
+    height: 350px;
+    margin-left: -50px;
+    margin-top: 20px;
+}
+.quote p{
+    font-family: "Whisper", cursive;
+    font-size: 35px;
+    color: #415971;
+    margin-right: 10px;
+    font-weight: bold;
+    text-align: center;
+}
+.statusErr{
+    text-align: center;
+    font-family: "Teko", sans-serif;
+    font-size: 25px;
+}

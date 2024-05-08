@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Whisper&display=swap');
+
+.titcon {
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .tit {
+    color: #415971;
+    font-size: 22px;
+    font-family: "Whisper", cursive;
+    font-weight: bold;
+    font-style: normal;
+}  
+.titcon pre{
+   font-size:15px;
+}  
+#contact{
+  margin-bottom: 60px;
+}
+.greeting{
+  text-align:center;
+  font-size: 22px;
+
+  font-family: "Whisper", cursive;
+  font-weight: bold;
+  color: #415971;
+}

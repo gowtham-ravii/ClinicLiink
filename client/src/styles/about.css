@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Whisper&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Teko:wght@300..700&family=Whisper&display=swap');
+.abt{
+    display:flex;
+    margin-left: 100px;
+    margin-right: 100px;
+    color: white;
+    background-color: #415971;
+    border-radius: 30px;
+}  
+.abt img{
+    height: 320px;
+    border-radius: 30px;
+    
+}
+.abt p{
+    padding: 10px;
+    font-size: 23px;
+    text-align: justify;
+    font-family: "EB Garamond", serif;
+  font-optical-sizing: auto;
+  font-style: italic;
+}
+.about h2{
+    padding-left: 10px;
+    font-family: "Whisper", cursive;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 30px;
+}
