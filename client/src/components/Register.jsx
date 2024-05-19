@@ -46,7 +46,7 @@ const Register = () => {
    
     } else {
       axios
-        .post('http://localhost:5000/user/register', {
+        .post('https://clinicliink-3.onrender.com/user/register', {
           name: name,
           email: email,
           password: password,
