@@ -51,7 +51,7 @@ const ApplyDoctors = () => {
       setErrorMessage("Please fill all the details");
     } else {
       axios
-        .post('http://localhost:5000/applydoctor', {
+        .post('https://clinicliink-3.onrender.com:5000/applydoctor', {
           name: userName,
           email: userEmail,
           phone: userData?.phone || '',
