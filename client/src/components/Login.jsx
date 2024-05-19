@@ -21,7 +21,7 @@ const Login = ({setLogin, setUserName, setUserEmail}) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    axios.post('http://localhost:5000/user/login', { email, password })
+    axios.post('https://clinicliink-3.onrender.com/user/login', { email, password })
       .then((res) => {
         if (res.data.message === 'Login Successful') {
           axios.get(`http://localhost:5000/user/${email}`)
