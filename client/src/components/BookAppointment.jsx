@@ -21,7 +21,7 @@ const BookAppointment = ({ setModalOpen,doctorName,doctorSpeciality,doctorLocati
   const handleBookAppointment = (e) => {
     // Add your appointment booking logic here
     e.preventDefault();
-    axios.post('http://localhost:5000/appointment',{
+    axios.post('https://clinicliink-3.onrender.com/appointment',{
       doctorName:doctorName,
       pemail:userEmail,
       patientName:userName,
