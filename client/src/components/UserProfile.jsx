@@ -18,7 +18,7 @@ const UserProfile = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get(`http://localhost:5000/user/${userEmail}`);
+        const response = await axios.get(`https://clinicliink-3.onrender.com/user/${userEmail}`);
         setUserData(response.data);
         setNuserName(userData.name);
       setNuserDOB(userData.DOB);
