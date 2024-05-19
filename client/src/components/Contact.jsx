@@ -16,7 +16,7 @@ const Contact = () => {
     if(!message){
       setErrorMessage("Please enter your Message");
     }else{
-    axios.post('http://localhost:5000/contact',{name:userName,email:userEmail,message:message})
+    axios.post('https://clinicliink-3.onrender.com/contact',{name:userName,email:userEmail,message:message})
     .then((res)=>{
       console.log(res);
       setErrorMessage("Message sent")
