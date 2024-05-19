@@ -62,7 +62,7 @@ const UserProfile = () => {
     }
 
     axios
-    .put(`http://localhost:5000/user/${userEmail}`, {
+    .put(`https://clinicliink-3.onrender.com/user/${userEmail}`, {
       name: nuserName,
       email: nuserEmail,
       phone: nuserphone,
