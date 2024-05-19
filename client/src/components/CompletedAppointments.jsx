@@ -23,7 +23,7 @@ const CompletedAppointments = () => {
     useEffect(() => {
         const fetchAppointments = async () => {
           try {
-            const response = await axios.get(`http://localhost:5000/appointment/${userEmail}`);
+            const response = await axios.get(`https://clinicliink-3.onrender.com/appointment/${userEmail}`);
             setAppointments(response.data.filter(appointment => appointment.date < new Date().toISOString())); // Filter appointments that are scheduled for future dates
             
           } catch (error) {
