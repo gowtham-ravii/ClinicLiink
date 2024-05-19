@@ -35,6 +35,7 @@ const BookAppointment = ({ setModalOpen,doctorName,doctorSpeciality,doctorLocati
     .then((res)=>{
       console.log(res);
       console.log("Appointment booked successfully");
+      alert("Appointment booked successfully");
     })
     .catch((err)=>{
       console.log(err);
@@ -46,7 +47,7 @@ const BookAppointment = ({ setModalOpen,doctorName,doctorSpeciality,doctorLocati
   return (
     <div className="book-appointment-modal">
       <div className="modal-content">
-        <h2>Book Appointment</h2>
+        <h2><strong>Book Appointment</strong></h2>
         <div className="input-group">
           <label htmlFor="date">Date:</label>
           <input type="date" id="date" name="date" value={appointmentDetails.date} onChange={handleInputChange} />

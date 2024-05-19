@@ -64,4 +64,20 @@
     background-color: rgb(176, 174, 174);
     color: #134c85;
   }
-  
+  .edit{
+    text-align: center;
+    font-family: "Teko", sans-serif;
+    color: #134c85;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  .editSubmit{
+    background-color: #415971;
+    width: 100px;
+    height:30px;
+    color: rgb(249, 247, 247);
+    border-radius:10px ;
+    border:0px;
+    font-size: 22px;
+    font-family: "Teko", sans-serif;
+  }

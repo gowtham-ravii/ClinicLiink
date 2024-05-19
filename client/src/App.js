@@ -11,6 +11,7 @@ import UserProfile from './components/UserProfile';
 import Doctors from './components/Doctors';
 import ApplyDoctors from './components/ApplyDoctors';
 import { userContext } from './components/Login';
+import CompletedAppointments from './components/CompletedAppointments';
 
 function App() {
   const [login, setLogin] = useState(false);
@@ -29,6 +30,7 @@ function App() {
         <Route path='/userprofile' element={login ? <UserProfile /> : <Navigate to="/" />} />
         <Route path='/doctors' element={<Doctors />} />
         <Route path='/doctorsapply' element={<ApplyDoctors />} />
+        <Route path='/completedappointments' element={<CompletedAppointments/>}/>
       </Routes>
     </userContext.Provider>
   );

@@ -27,7 +27,6 @@
     border-radius: 15px;
     font-family: "Teko", sans-serif;
     font-size: 20px;
-
 }
 
 .tabapp tbody tr:nth-child(even) {
@@ -55,3 +54,73 @@
     font-size: 20px;
     border-radius: 10px;
 }
+.confirmation {
+    position: fixed;
+    font-family: "Teko", sans-serif;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999; /* Ensure it appears above other content */
+    background-color:whitesmoke; /* Alternate row colors for better readability */
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Box shadow for depth */
+  }
+  
+  .confirmation p {
+    margin: 0 0 10px; /* Add margin below the paragraph */
+  }
+  
+  .confirmation button {
+    margin-right: 10px; /* Add some space between buttons */
+    background-color: #415971;
+  font-family: 'Teko', sans-serif;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 70px;
+  height: 35px;
+  font-size: 20px;
+  }
+  .cancelbtn{
+    background-color: #415971;
+    font-family: 'Teko', sans-serif;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 70px;
+    height: 35px;
+    font-size: 20px;
+  }
+  .search {
+    margin-bottom: 20px;
+    position: relative;
+    justify-content: center;
+
+    width: 100%;
+  }
+  .search input {
+    width: calc(100% - 30px);
+    padding: 10px;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+    font-family: "Teko", sans-serif;
+    font-size: 20px;
+    background-color: #cbd5db;
+    color: black;
+    padding-left: 40px;
+  }
+  .search input:focus {
+    outline: none;
+  }
+  .search .icon {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+  }

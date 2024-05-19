@@ -73,4 +73,31 @@
     font-family: "Whisper", cursive;
     text-align: center;
   }
+  .searchDoc{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    position: relative;
+  }
+  .searchDoc input {
+    width: 300px;
+    padding: 10px;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+    font-family: "Teko", sans-serif;
+    font-size: 20px;
+    background-color: #cbd5db;
+    color: black;
+    padding-left: 40px;
+  }
+  .searchDoc input:focus {
+    outline: none;
+  }
+  .searchDoc .icon {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+  }
   

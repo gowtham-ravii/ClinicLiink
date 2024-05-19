@@ -42,11 +42,11 @@ const Register = () => {
     e.preventDefault();
   
     if (password !== password2) {
-
+      setErrorMessage("Passwords do not match");
    
     } else {
       axios
-        .post('http://localhost:5000/register', {
+        .post('http://localhost:5000/user/register', {
           name: name,
           email: email,
           password: password,
@@ -57,7 +57,7 @@ const Register = () => {
         })
         .then((res) => {
           console.log(res);
-          setErrorMessage("Login Successfull");
+          setErrorMessage("Registration Successfull");
           window.location.href = '/';
           setName('');
           setEmail('');
@@ -69,8 +69,7 @@ const Register = () => {
           setBloodgroup('');
         })
         .catch((err) => {
-          console.log(err);
-          alert('Registration Failed');
+          setErrorMessage(err.response.data.error)
         });
     }
   };
@@ -145,6 +144,8 @@ const Register = () => {
         <div className="loginre">
       <p>Already an User?<a href='/'> Sign In</a></p>
       </div>
+      {errorMessage && <h3 className='errorMessage'>{errorMessage}</h3>}
+
       </div>
       <Foot />
     </div>

@@ -20,7 +20,7 @@ const Doctor = ({ doctor }) => {
             <img src={Doct} alt="Doctor" />
           </div>
           <div className="doctor-details">
-            <h3 className="doctor-name">{doctor.name}</h3>
+            <h3 className="doctor-name">Dr. {doctor.name}</h3>
             <p className="doctor-specialization">{doctor.speciality}</p>
             <p className="doctor-location">{doctor.address}</p>
           </div>

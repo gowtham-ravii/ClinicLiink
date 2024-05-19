@@ -7,6 +7,7 @@ import Foot from './Foot';
 import axios from 'axios';
 export const userContext =createContext()
 const Login = ({setLogin, setUserName, setUserEmail}) => {
+  const[errorMessage ,setErrorMessage]=useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const navigate=useNavigate();
@@ -20,22 +21,24 @@ const Login = ({setLogin, setUserName, setUserEmail}) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    axios.post('http://localhost:5000/login', { email, password })
+    axios.post('http://localhost:5000/user/login', { email, password })
       .then((res) => {
         if (res.data.message === 'Login Successful') {
           axios.get(`http://localhost:5000/user/${email}`)
           .then((res) => {
             setUserName(res.data.name);
+            setErrorMessage('Login Successful');
           })
           setUserEmail(email);
           setLogin(true);
           navigate('/home')
-        } else {
-          alert("Login unsuccessful");
         }
+        else{
+          setErrorMessage(res.data.error);
+        } 
       })
       .catch((err) => {
-        console.log(err);
+        setErrorMessage(err.response.data.error);
       });
   };
 
@@ -64,6 +67,9 @@ const Login = ({setLogin, setUserName, setUserEmail}) => {
           </form>
           <div className="registerlo">
             <p>Not a User?<a href='/register'> Sign Up</a></p>
+          </div>
+          <div className="errorMessage">
+            {errorMessage && <p>{errorMessage}</p>}
           </div>
         </div>
       </div>

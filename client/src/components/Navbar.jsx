@@ -1,7 +1,7 @@
 // Navbar.js
 import React, { useContext } from "react";
 import "../styles/nbar.css";
-import { FaHome, FaLaptopMedical, FaStethoscope, FaUserEdit, FaRegUser, FaMedkit } from "react-icons/fa";
+import { FaHome, FaLaptopMedical, FaStethoscope, FaUserEdit, FaRegUser, FaMedkit,FaFill,FaStackOverflow } from "react-icons/fa";
 import { MdContactMail, MdLogin, MdVerifiedUser } from "react-icons/md";
 import { Link, NavLink, useLocation } from "react-router-dom"; // Import NavLink for active class styling
 import { userContext } from "./Login";
@@ -40,9 +40,10 @@ const Navbar = () => {
 {login &&
         <div className="navlist">
           <li>
-            <a href="#contact">
-              <MdContactMail /> Contact
-            </a>
+            <NavLink to="/completedappointments" activeClassName="active-link">
+              <FaStackOverflow /> Consulted Appoitnments
+            </NavLink>
+            
           </li>
         </div>
 }

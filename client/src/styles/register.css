@@ -95,3 +95,10 @@
     padding-left: 10px;
     font-weight: medium;
 }
+.errorMessage{
+    color: rgb(255, 141, 141);
+    font-family: "Teko", sans-serif;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 10px;
+}
