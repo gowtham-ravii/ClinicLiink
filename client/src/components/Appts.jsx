@@ -44,7 +44,7 @@ const Appts = () => {
   const confirmCancel = () => {
     const index = appointmentIndexToDelete;
     const appointmentId = appointments[index]._id;
-    axios.delete(`http://localhost:5000/appointment/${appointmentId}`)
+    axios.delete(`https://clinicliink-3.onrender.com/appointment/${appointmentId}`)
       .then((res)=>{
         console.log(res);
         console.log("Appointment cancelled successfully");
